@@ -104,7 +104,7 @@ author:
   name             : "Allan"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "항상 배우는 사람이 되자."
-  location         : "Senjong"
+  location         : "Senjong, South Korea"
   email            : yoonsangminphone@gmail.com
   links:
     - label: "Email"
@@ -284,6 +284,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
