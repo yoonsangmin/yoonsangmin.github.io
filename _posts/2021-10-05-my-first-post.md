@@ -4,8 +4,6 @@ excerpt: "첫 글입니당"
 
 categories:
   - blog
-tags:
-  - [blog, jekyll, github, git]
 
 toc: true
 toc_sticky: true
