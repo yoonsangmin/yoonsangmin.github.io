@@ -3,9 +3,9 @@ title: "두 번 째 글"
 excerpt: "두 번 째 글입니당"
 
 categories:
-  - Blog
+  - blog
 tags:
-  - [Blog, jekyll, Github, Git]
+  - [blog, jekyll, github, git]
 
 toc: true
 toc_sticky: true

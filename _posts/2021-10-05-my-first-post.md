@@ -3,9 +3,9 @@ title: "첫 글"
 excerpt: "첫 글입니당"
 
 categories:
-  - Blog
+  - blog
 tags:
-  - [Blog, jekyll, Github, Git]
+  - [blog, jekyll, github, git]
 
 toc: true
 toc_sticky: true
