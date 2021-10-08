@@ -16,11 +16,13 @@ layout: archive
     {% for category in site.categories %}
       {% if category[1].size == i %}
         {% assign category_word = category[0] %}
-        <li>
-          <a href="{{ category_word | slugify }}">
-            <strong>{{ site.data.categories[category_word].name }}</strong> <span class="taxonomy__count">{{ i }}</span>
-          </a>
-        </li>
+        {% if site.data.categories contains category_word %}
+          <li>
+            <a href="{{ category_word | slugify }}">
+              <strong>{{ site.data.categories[category_word].name }}</strong> <span class="taxonomy__count">{{ i }}</span>
+            </a>
+          </li>
+        {% endif %}
       {% endif %}
     {% endfor %}
   {% endfor %}
@@ -31,15 +33,17 @@ layout: archive
   {% for category in site.categories %}
     {% if category[1].size == i %}
       {% assign category_word = category[0] %}
-      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ site.data.categories[category_word].name }}</h2>
-        <div class="entries-{{ entries_layout }}">
-          {% for post in category.last %}
-            {% include archive-single.html type=entries_layout %}
-          {% endfor %}
-        </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
+      {% if site.data.categories contains category_word %}
+        <section id="{{ category_word | slugify | downcase }}" class="taxonomy__section">
+          <h2 class="archive__subtitle">{{ site.data.categories[category_word].name }}</h2>
+          <div class="entries-{{ entries_layout }}">
+            {% for post in category.last %}
+              {% include archive-single.html type=entries_layout %}
+            {% endfor %}
+          </div>
+          <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+        </section>
+      {% endif %}
     {% endif %}
   {% endfor %}
 {% endfor %}

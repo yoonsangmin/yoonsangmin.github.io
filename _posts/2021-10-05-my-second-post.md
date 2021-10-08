@@ -4,6 +4,8 @@ excerpt: "두 번 째 글입니당"
 
 categories:
   - blog
+tags:
+  - [blog, jekyll]
 
 toc: true
 toc_sticky: true

@@ -8,14 +8,23 @@
 {% if site.tag_archive.path %}
   {% assign tags_sorted = page.tags | sort_natural %}
 
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
-    <span itemprop="keywords">
-    {% for tag_word in tags_sorted %}
-      {% if site.data.tags contains tag_word %}
-        <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ site.data.tags[tag_word].name }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
-      {% endif %}
-    {% endfor %}
-    </span>
-  </p>
+  {% assign is_tag = false %}
+  {% for tag_word in tags_sorted %}
+    {% if site.data.tags contains tag_word %}
+      {% assign is_tag = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if is_tag %}
+    <div class="page__taxonomy">
+      <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
+      <span itemprop="keywords">
+      {% for tag_word in tags_sorted %}
+        {% if site.data.tags contains tag_word %}
+          <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ site.data.tags[tag_word].name }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+        {% endif %}
+      {% endfor %}
+      </span>
+    </div>
+  {% endif %}
 {% endif %}

@@ -3,7 +3,9 @@ title: "첫 글"
 excerpt: "첫 글입니당"
 
 categories:
-  - blog
+  - cpp
+tags:
+  - what
 
 toc: true
 toc_sticky: true

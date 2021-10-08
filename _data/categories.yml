@@ -1,2 +1,5 @@
 blog:
   name: Blog
+
+cpp:
+  name: C++
