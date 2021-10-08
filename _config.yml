@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Allan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/favicon-32x32.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "항상 배우는 사람이 되자."
   location         : "Senjong, South Korea"
   email            : yoonsangminphone@gmail.com

@@ -1,9 +1,9 @@
 ---
-title: "세 번 째 글"
-excerpt: "세 번째 글이에용"
+title: "네 번 째 글"
+excerpt: "네 번째 글이에용"
 
 categories:
-  - guitar
+  - vocal
 tags:
   - jekyll
 
@@ -14,4 +14,4 @@ date: 2021-10-04
 last_modified_at: 2021-10-06
 ---
 
-세 번 째 글 기타 띵가~
+네 번 째 글 기타 띵가~

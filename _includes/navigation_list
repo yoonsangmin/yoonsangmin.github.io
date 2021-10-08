@@ -15,11 +15,11 @@
             <ul>
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for category in site.data.categories %}
+                {% for category in site.categories %}
                     {% assign category_word = category[0] %}
                     {% assign child_word = child %}
                     {% if category_word == child_word %}
-                        <li><a href="/categories/{{child_word}}" class=""> {{child_word}} ({{category[1].size}})</a></li>
+                        <li><a href="/categories/{{child_word}}" class=""> {{site.data.categories[child_word].name}} ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

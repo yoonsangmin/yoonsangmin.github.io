@@ -6,3 +6,9 @@ cpp:
 
 guitar:
   name: Guitar
+
+piano:
+  name: Piano
+
+vocal:
+  name: Vocal

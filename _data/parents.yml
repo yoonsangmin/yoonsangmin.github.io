@@ -4,4 +4,4 @@ programming:
 
 instrument:
   name: Instrument
-  childs: [guitar, piano]
+  childs: [guitar, piano, vocal]
