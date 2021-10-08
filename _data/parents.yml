@@ -1,0 +1,7 @@
+programming:
+  name: Programming
+  childs: [blog, cpp]
+
+instrument:
+  name: Instrument
+  childs: [guitar, piano]

@@ -5,7 +5,7 @@ excerpt: "첫 글입니당"
 categories:
   - cpp
 tags:
-  - what
+  - jekyll
 
 toc: true
 toc_sticky: true
