@@ -24,7 +24,7 @@ last_modified_at: 2021-10-11
 
 ​	저는 취미로 기타와 피아노를 연주합니다. 잘 하진 못 하지만 꾸준함이 중요하다고 생각하며 매일 연습하려고 노력합니다. 요즘엔 살이쪄서 다이어트에도 관심이 많습니다. 그리고 레트로를 좋아합니다.😀
 
-![first](F:\source\repos\Blog\yoonsangmin.github.io\assets\images\blog\2021-10-05-my-first-post\first.jpg)
+![first](..\..\assets\images\blog\2021-10-05-my-first-post\first.jpg)
 
 # 블로그를 쓰게 된 이유
 
