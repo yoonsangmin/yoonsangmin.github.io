@@ -1,7 +1,11 @@
-programming:
-  name: Programming
-  childs: [blog, cpp]
+# programming:
+#   name: Programming
+#   childs: [cpp]
 
-instrument:
-  name: Instrument
-  childs: [guitar, piano, vocal]
+# instrument:
+#   name: Instrument
+#   childs: [guitar, piano, vocal]
+
+git:
+  name: Git
+  childs: [blog]

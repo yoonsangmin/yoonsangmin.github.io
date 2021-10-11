@@ -6,7 +6,8 @@
 {% endcase %}
 
 {% if site.tag_archive.path %}
-  {% assign tags_sorted = page.tags | sort_natural %}
+  <!-- {% assign tags_sorted = page.tags | sort_natural %} -->
+  {% assign tags_sorted = page.tags %}
 
   {% assign is_tag = false %}
   {% for tag_word in tags_sorted %}

@@ -2,11 +2,6 @@
 title: "첫 글"
 excerpt: "첫 글입니당"
 
-categories:
-  - cpp
-tags:
-  - jekyll
-
 toc: true
 toc_sticky: true
 
