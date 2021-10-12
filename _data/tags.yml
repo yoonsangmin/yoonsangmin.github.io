@@ -4,3 +4,9 @@ blog:
   name: Blog
 jekyll:
   name: Jekyll
+portfolio:
+  name: Portfolio
+game_development:
+  name: Game development
+directx:
+  name: DirectX

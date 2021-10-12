@@ -9,3 +9,7 @@
 git:
   name: Git
   childs: [blog]
+
+game_development:
+  name: Game Development
+  childs: [portfolio]
