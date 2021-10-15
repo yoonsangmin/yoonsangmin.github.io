@@ -1,5 +1,5 @@
 ---
-title: "Run, Dodge, Shoot"
+title: "게임 개발 포트폴리오 4. Run, Dodge, Shoot"
 
 categories: portfolio
 tags: [portfolio, game_development, unity]
