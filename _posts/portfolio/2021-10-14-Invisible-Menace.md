@@ -1,5 +1,5 @@
 ---
-title: "Invisible Menace"
+title: "게임 개발 포트폴리오 3. Invisible Menace"
 
 categories: portfolio
 tags: [portfolio, game_development, unity, vr]
