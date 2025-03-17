@@ -1,0 +1,23 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+#sidebar .sidebar-bottom {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.sidebar-bottom a,
+.sidebar-bottom button,
+.sidebar-bottom .icon-border {
+  margin: 0.4rem;
+}
